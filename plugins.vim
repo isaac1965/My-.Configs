@@ -6,6 +6,7 @@ Plug 'mattn/emmet-vim'
 Plug 'mattn/webapi-vim'
 "Vim-airline
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 "Live-server
 Plug 'manzeloth/live-server'
 "Color picker VCoolor
