@@ -7,10 +7,15 @@ syntax on
 set cursorline
 set number
 set relativenumber
-set hlsearch
 set autoindent
 set noshowmode
 set background=dark
+
+"Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
 au User AirlineAfterInit  :let g:airline_section_z = airline#section#create(['%3p%% L/C: %l/%c %L'])
 "let g:airline_left_sep = '▶'
 "let g:airline_right_sep = '◀'
