@@ -6,7 +6,9 @@ noremap <leader>q :q!<CR>
 noremap <leader>z :wq!<CR>
 noremap <leader>p :PlugInstall<CR>
 noremap <leader>c :PlugClean<CR>
-
+noremap <leader>vc  :VCoolor<CR> 
+noremap <leader>r :VCoolIns r<CR>
+noremap <leader>ra :VCoolIns ra<CR>
 "split resize
 nnoremap <Leader>. 10<C-w>>
 nnoremap <Leader>, 10<C-w><
@@ -24,11 +26,11 @@ nnoremap <silent> <leader><C-k> :TmuxNavigateUp<cr>
 nnoremap <silent> <leader><C-l> :TmuxNavigateRight<cr>
 
 "tabs navigation
-map <Leader>h :tabpreviuos<cr>
+map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
 
 "Buffers
-map <Leader>ob :Buffers<cr>
+map <Leader>o :Buffers<cr>
 
 "Faster scrolling
 nnoremap <C-j> 10<C-e>
