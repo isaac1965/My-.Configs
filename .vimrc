@@ -10,7 +10,6 @@ set relativenumber
 set autoindent
 set noshowmode
 set background=dark
-
 "Searching
 set hlsearch
 set incsearch
@@ -20,5 +19,7 @@ set smartcase
 let g:airline_theme='papercolor'
 so ~/.vim/plugins.vim
 so ~/.vim/maps.vim
+so ~/.vim/snippets.vim
 colorscheme tender 
 let g:airline_powerline_fonts = 1 
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets_custom.json')), "\n"))
