@@ -6,7 +6,7 @@ noremap <leader>q :q!<CR>
 noremap <leader>z :wq!<CR>
 noremap <leader>p :PlugInstall<CR>
 noremap <leader>c :PlugClean<CR>
-noremap <leader>vc  :VCoolor<CR> 
+noremap <leader>vc :VCoolor<CR> 
 noremap <leader>r :VCoolIns r<CR>
 noremap <leader>ra :VCoolIns ra<CR>
 "split resize
