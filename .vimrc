@@ -20,6 +20,7 @@ let g:airline_theme='papercolor'
 so ~/.vim/plugins.vim
 so ~/.vim/maps.vim
 so ~/.vim/snippets.vim
+so ~/.vim/autocomplete.vim
 colorscheme tender 
 let g:airline_powerline_fonts = 1 
-let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.snippets_custom.json')), "\n"))
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/extensiones/.snippets_custom.json')), "\n"))
