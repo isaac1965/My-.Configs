@@ -23,8 +23,12 @@ let g:airline_theme='papercolor'
 colorscheme tender 
 " Enable powerline
 let g:airline_powerline_fonts = 1 
-" Tab for emmet
+" Tab for emmet in normal mode
 let g:user_emmet_expandabbr_key = '<tab>'
+" Disable section warning equal trailing
+let g:airline_section_warning='' 
+" Disable section errors
+let g:airline_section_error='' 
 "Change when i am mode insert the cursor a beam
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
