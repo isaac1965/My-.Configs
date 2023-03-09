@@ -1,8 +1,3 @@
-"Change when i am mode insert the cursor a beam
-let &t_SI = "\e[6 q"
-let &t_EI = "\e[2 q"
-let g:user_emmet_expandabbr_key = '<tab>'
-
 syntax on
 set cursorline
 set number
@@ -16,12 +11,20 @@ set incsearch
 set ignorecase
 set smartcase
 "au User AirlineAfterInit  :let g:airline_section_z = airline#section#create(['%3p%% L/C: %l/%c %L'])
-let g:airline_theme='papercolor'
 so ~/.vim/plugins.vim
 so ~/.vim/maps.vim
 so ~/.vim/snippets.vim
 so ~/.vim/autocomplete.vim
 so ~/.vim/compilerC.vim
+so ~/.vim/terminal.vim
+" Theme for vim airline
+let g:airline_theme='papercolor'
+" Theme for vim
 colorscheme tender 
+" Enable powerline
 let g:airline_powerline_fonts = 1 
-let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/extensiones/.snippets_custom.json')), "\n"))
+" Tab for emmet
+let g:user_emmet_expandabbr_key = '<tab>'
+"Change when i am mode insert the cursor a beam
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
