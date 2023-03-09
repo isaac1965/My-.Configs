@@ -10,7 +10,6 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-"au User AirlineAfterInit  :let g:airline_section_z = airline#section#create(['%3p%% L/C: %l/%c %L'])
 so ~/.vim/plugins.vim
 so ~/.vim/maps.vim
 so ~/.vim/snippets.vim
@@ -32,3 +31,5 @@ let g:airline_section_error=''
 "Change when i am mode insert the cursor a beam
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+"Section z vim-airline
+let g:airline_section_z = '%3p%% %2s%=👾 %l ⚡%c 🔥 %L'
