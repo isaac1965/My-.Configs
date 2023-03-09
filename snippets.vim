@@ -1,3 +1,4 @@
+let g:user_emmet_settings = webapi#json#decode(join(readfile(expand('~/.vim/extensiones/.snippets_custom.json')), "\n"))
 let g:user_emmet_settings = {
 \  'variables': {'lang': 'ja'},
 \  'html': {
