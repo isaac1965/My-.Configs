@@ -1,11 +1,10 @@
 let mapleader = " "
-
 imap jj <ESC>
 noremap <leader>w :w!<CR>
 noremap <leader>q :q!<CR>
 noremap <leader>z :wq!<CR>
-noremap <leader>p :PlugInstall<CR>
-noremap <leader>c :PlugClean<CR>
+noremap <leader>pi :PlugInstall<CR>
+noremap <leader>pc :PlugClean<CR>
 noremap <leader>vc :VCoolor<CR> 
 noremap <leader>r :VCoolIns r<CR>
 noremap <leader>ra :VCoolIns ra<CR>

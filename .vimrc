@@ -1,10 +1,20 @@
 syntax on
+"set t_Co=256
+"set encoding=utf-8
 set cursorline
+set clipboard=unnamedplus
+set mouse=a
 set number
 set relativenumber
-set autoindent
 set noshowmode
 set background=dark
+set numberwidth=4 
+" Identation 
+set shiftwidth=4
+set tabstop=4
+set autoindent
+set expandtab
+filetype indent on
 "Searching
 set hlsearch
 set incsearch
@@ -17,9 +27,9 @@ so ~/.vim/autocomplete.vim
 so ~/.vim/compilerC.vim
 so ~/.vim/terminal.vim
 " Theme for vim airline
-let g:airline_theme='papercolor'
+let g:airline_theme='ayu_mirage'
 " Theme for vim
-colorscheme tender 
+colorscheme PaperColor
 " Enable powerline
 let g:airline_powerline_fonts = 1 
 " Tab for emmet in normal mode
@@ -33,3 +43,7 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 "Section z vim-airline
 let g:airline_section_z = '%3p%% %2s%=👾 %l ⚡%c 🔥 %L'
+"Customization indentline
+let g:indentLine_char =  '▏' 
+"Separator between windows
+set fillchars=vert:▏
