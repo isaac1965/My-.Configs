@@ -9,8 +9,8 @@ noremap <leader>vc :VCoolor<CR>
 noremap <leader>r :VCoolIns r<CR>
 noremap <leader>ra :VCoolIns ra<CR>
 "split resize
-nnoremap <Leader>. 10<C-w>>
-nnoremap <Leader>, 10<C-w><
+nnoremap <Leader>, 10<C-w>>
+nnoremap <Leader>. 10<C-w><
 
 "Plugs
 map <Leader>bn :NERDTreeFind<CR>
