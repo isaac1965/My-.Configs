@@ -29,8 +29,8 @@ map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
 
 "Buffers
-map <Leader>o :Buffers<cr>
+map <Leader>oi :Buffers<cr>
 
 "Faster scrolling
-nnoremap <C-j> 10<C-e>
-noremap <C-k> 10<C-y>
+nnoremap <C-u> 10<C-e>
+nnoremap <C-i> 10<C-y>
