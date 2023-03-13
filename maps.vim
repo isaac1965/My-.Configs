@@ -32,5 +32,6 @@ map <Leader>l :tabnext<cr>
 map <Leader>ot :Buffers<cr>
 
 "Faster scrolling
-"nnoremap <A-j> 10<A-e>
-"nnoremap <A-k> 10<A-y>
+nnoremap <C-u> 10<C-e>
+nnoremap <C-i> 10<C-y>
+

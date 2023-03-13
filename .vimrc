@@ -37,8 +37,10 @@ let g:sonokai_style= 'andromeda'
 colorscheme sonokai
 " Enable powerline
 let g:airline_powerline_fonts = 1 
-" Tab for emmet in normal mode
+" Tab for emmet in normal mode Important!! As well.
 "let g:user_emmet_expandabbr_key = '<tab>'
+"Tab for emmet in insert mode 
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 " Disable section warning equal trailing
 let g:airline_section_warning='' 
 " Disable section errors
