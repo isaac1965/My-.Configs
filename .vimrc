@@ -1,5 +1,5 @@
 syntax on
-"set t_Co=256
+set t_Co=256
 "set encoding=utf-8
 set cursorline
 set clipboard=unnamedplus
@@ -27,13 +27,18 @@ so ~/.vim/autocomplete.vim
 so ~/.vim/compilerC.vim
 so ~/.vim/terminal.vim
 " Theme for vim airline
-let g:airline_theme='ayu_mirage'
+let g:airline_theme='badwolf'
 " Theme for vim
-colorscheme PaperColor
+if has('termiguicolors')
+    set termguicolors
+endif    
+let g:sonokai_style= 'andromeda'
+"let g:sonokai_better_performance = 1
+colorscheme sonokai
 " Enable powerline
 let g:airline_powerline_fonts = 1 
 " Tab for emmet in normal mode
-let g:user_emmet_expandabbr_key = '<tab>'
+"let g:user_emmet_expandabbr_key = '<tab>'
 " Disable section warning equal trailing
 let g:airline_section_warning='' 
 " Disable section errors
@@ -45,5 +50,6 @@ let &t_EI = "\e[2 q"
 let g:airline_section_z = '%3p%% %2s%=👾 %l ⚡%c 🔥 %L'
 "Customization indentline
 let g:indentLine_char =  '▏' 
+let g:indentLine_color_term = 2
 "Separator between windows
 set fillchars=vert:▏
