@@ -33,7 +33,7 @@ if has('termiguicolors')
     set termguicolors
 endif    
 let g:sonokai_style= 'andromeda'
-"let g:sonokai_better_performance = 1
+let g:sonokai_better_performance = 1
 colorscheme sonokai
 " Enable powerline
 let g:airline_powerline_fonts = 1 
@@ -50,8 +50,16 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 "Section z vim-airline
 let g:airline_section_z = '%3p%% %2s%=👾 %l ⚡%c 🔥 %L'
-"Customization indentline
+"Customization indentline plugin
 let g:indentLine_char =  '▏' 
 let g:indentLine_color_term = 2
 "Separator between windows
 set fillchars=vert:▏
+" Cambia el color de los numeros de la linea del cursor 
+highlight CursorLineNr ctermfg=3
+" Cambia el color de la linea vertical que divide las ventanas ctermfg:
+" funciona para linea delgada y ctermbg: funciona para la linea gruesa
+highlight VertSplit ctermfg=10
+" Cambia el color de resaltado de la linea descomentar si quiere ver el efecto
+"highlight CursorLine ctermbg=DarkGrey ctermfg=black
+highlight LineNR ctermfg=grey
