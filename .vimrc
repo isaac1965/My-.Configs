@@ -1,3 +1,9 @@
+"███    ███ ██    ██    ██    ██ ██ ███    ███ ██████   ██████ 
+"████  ████  ██  ██     ██    ██ ██ ████  ████ ██   ██ ██      
+"██ ████ ██   ████      ██    ██ ██ ██ ████ ██ ██████  ██      
+"██  ██  ██    ██        ██  ██  ██ ██  ██  ██ ██   ██ ██      
+"██      ██    ██    ██   ████   ██ ██      ██ ██   ██  ██████ 
+
 syntax on
 set t_Co=256
 "set encoding=utf-8
@@ -29,13 +35,13 @@ so ~/.vim/terminal.vim
 " Theme for vim airline
 let g:airline_theme='badwolf'
 " Theme for vim
-if has('termiguicolors')
-    set termguicolors
-endif    
-let g:sonokai_style= 'andromeda'
-let g:sonokai_better_performance = 1
+"if has('termiguicolors')
+    "set termguicolors
+"endif    
+"let g:sonokai_style= 'andromeda'
+"let g:sonokai_better_performance = 1
 colorscheme sonokai
-" Enable powerline
+"' Enable powerline
 let g:airline_powerline_fonts = 1 
 " Tab for emmet in normal mode Important!! As well.
 "let g:user_emmet_expandabbr_key = '<tab>'
@@ -56,10 +62,15 @@ let g:indentLine_color_term = 2
 "Separator between windows
 set fillchars=vert:▏
 " Cambia el color de los numeros de la linea del cursor 
-highlight CursorLineNr ctermfg=3
+highlight CursorLineNr cterm=bold ctermfg=4 
 " Cambia el color de la linea vertical que divide las ventanas ctermfg:
 " funciona para linea delgada y ctermbg: funciona para la linea gruesa
 highlight VertSplit ctermfg=10
 " Cambia el color de resaltado de la linea descomentar si quiere ver el efecto
 "highlight CursorLine ctermbg=DarkGrey ctermfg=black
-highlight LineNR ctermfg=grey
+highlight LineNR ctermfg=red ctermbg=132661 
+"change background of vim
+highlight Normal ctermbg= 131617 ctermfg=white
+" set the background and foreground colors of the banner
+ highlight Banner ctermfg=red ctermbg=Blue
+
