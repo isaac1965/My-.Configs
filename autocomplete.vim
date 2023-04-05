@@ -1,7 +1,7 @@
-" Use tab for trigger completion with characters ahead and navigate
-inoremap <silent><expr> <TAB>
+" Use ctrl+l for trigger completion with characters ahead and navigate
+inoremap <silent><expr> <C-l>
 \ coc#pum#visible() ? coc#pum#next(1) :
-\ CheckBackspace() ? "\<Tab>" :
+\ CheckBackspace() ? "\<C-l>" :
 \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 " Make <CR> to accept selected completion item or notify coc.nvim to format
