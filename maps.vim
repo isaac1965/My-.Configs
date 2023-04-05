@@ -35,3 +35,6 @@ map <Leader>ot :Buffers<cr>
 nnoremap <C-u> 10<C-e>
 nnoremap <C-i> 10<C-y>
 
+"LiveServer
+map <F5> :LiveServer start<CR>
+map <F6> :LiveServer stop<CR>
