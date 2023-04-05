@@ -6,7 +6,7 @@
 
 syntax on
 set t_Co=256
-"set encoding=utf-8
+set encoding=utf-8
 set cursorline
 set clipboard=unnamedplus
 set mouse=a
@@ -35,13 +35,13 @@ so ~/.vim/terminal.vim
 " Theme for vim airline
 let g:airline_theme='badwolf'
 " Theme for vim
-"if has('termiguicolors')
-    "set termguicolors
-"endif    
-"let g:sonokai_style= 'andromeda'
-"let g:sonokai_better_performance = 1
+if has('termiguicolors')
+    set termguicolors
+endif    
+let g:sonokai_style= 'espresso'
+let g:sonokai_better_performance=1
 colorscheme sonokai
-"' Enable powerline
+" Enable powerline
 let g:airline_powerline_fonts = 1 
 " Tab for emmet in normal mode Important!! As well.
 "let g:user_emmet_expandabbr_key = '<tab>'
@@ -70,7 +70,5 @@ highlight VertSplit ctermfg=10
 "highlight CursorLine ctermbg=DarkGrey ctermfg=black
 highlight LineNR ctermfg=red ctermbg=132661 
 "change background of vim
-highlight Normal ctermbg= 131617 ctermfg=white
-" set the background and foreground colors of the banner
- highlight Banner ctermfg=red ctermbg=Blue
+"highlight Normal ctermbg=131617 ctermfg=white
 
