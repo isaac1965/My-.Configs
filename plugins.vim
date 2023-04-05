@@ -1,14 +1,19 @@
 call plug#begin('~/.vim/plugged')
 "Themes
-Plug 'jacoborus/tender.vim'
+"Papercolor theme
+Plug 'NLKNguyen/papercolor-theme'
+"Iceberg theme
+Plug 'cocopon/iceberg.vim'
+"Sonokai
+Plug 'sainnhe/sonokai'
 "Emmet
 Plug 'mattn/emmet-vim'
 Plug 'mattn/webapi-vim'
+" live-server
+ Plug 'manzeloth/live-server'
 "Vim-airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-"Live-server
-Plug 'manzeloth/live-server'
 "Color picker VCoolor
 Plug 'KabbAmine/vCoolor.vim'
 " Nerd Tree
@@ -37,5 +42,9 @@ Plug 'Yggdroot/indentLine'
 "Vimsignify
 Plug 'mhinz/vim-signify'
 "Vim-multiple-cursors
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+"Plugin Tag Along
+Plug 'AndrewRadev/tagalong.vim'
+"icons for vim
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
