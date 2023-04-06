@@ -71,3 +71,4 @@ highlight VertSplit ctermfg=10
 highlight LineNR ctermfg=red ctermbg=132661 
 "change background of vim
 "highlight Normal ctermbg=131617 ctermfg=white
+
